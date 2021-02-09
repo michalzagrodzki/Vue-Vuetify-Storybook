@@ -15,7 +15,6 @@
     "vuex": "^3.4.0"
   },
   "devDependencies": {
-    "@storybook/vue": "^6.1.17",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
