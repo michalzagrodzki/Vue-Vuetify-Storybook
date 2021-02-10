@@ -1,5 +1,5 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <v-btn elevation="2" :class="classes" @click="onClick" :style="style">{{ label }}</v-btn>
 </template>
 
 <script>
@@ -32,10 +32,10 @@ export default {
   computed: {
     classes() {
       return {
-        'storybook-button': true,
+        /*'storybook-button': true,
         'storybook-button--primary': this.primary,
         'storybook-button--secondary': !this.primary,
-        [`storybook-button--${this.size}`]: true,
+        [`storybook-button--${this.size}`]: true,*/
       };
     },
     style() {
