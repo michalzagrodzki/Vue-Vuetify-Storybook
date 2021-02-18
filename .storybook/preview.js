@@ -32,7 +32,7 @@ export const decorators = [
         }
       },
       template: `
-        <v-app>
+        <v-app style="background-color: transparent;">
           <v-main>
             <v-container fluid>
               <wrapped />
