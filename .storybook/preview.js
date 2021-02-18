@@ -20,7 +20,7 @@ export const decorators = [
       props: {
         dark: {
           type: Boolean,
-          default: context.args.dark,
+          default: context.globals.backgrounds === "#333333" ? true : false,
         },
       },
       watch: {
