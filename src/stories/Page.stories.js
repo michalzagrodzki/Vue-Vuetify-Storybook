@@ -1,24 +1,18 @@
-import MyPage from './Page';
-import * as HeaderStories from './Header.stories';
+import MyPage from "./Page";
+import * as CardStories from "./Card.stories";
 
 export default {
-  title: 'Example/Page',
-  component: MyPage,
+  title: "Example/Page",
+  component: MyPage
 };
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { MyPage },
-  template:
-    '<my-page :user="user" @onLogin="onLogin" @onLogout="onLogout" @onCreateAccount="onCreateAccount" />',
+  template: '<my-page @onLogin="onLogin"/>'
 });
-
-export const LoggedIn = Template.bind({});
-LoggedIn.args = {
-  ...HeaderStories.LoggedIn.args,
-};
 
 export const LoggedOut = Template.bind({});
 LoggedOut.args = {
-  ...HeaderStories.LoggedOut.args,
+  ...CardStories.Default.args
 };
