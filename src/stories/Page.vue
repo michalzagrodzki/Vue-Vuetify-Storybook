@@ -4,7 +4,7 @@
       <v-col cols>
         <MyCard
           title="Login"
-          subtitle="Welcome back. Please login to our service"
+          subTitle="Welcome back. Please login to our service"
           width="500"
           elevation="2"
         />
