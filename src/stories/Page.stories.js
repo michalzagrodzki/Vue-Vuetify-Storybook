@@ -17,20 +17,20 @@ const Template = (args, { argTypes }) => ({
   components: { MyPage, MyCard, MyInput, MyButton },
   template: `
     <my-page @onLogin="onLogin">
-      <MyCard
+      <my-card
         title="Login"
         subTitle="Welcome back. Please login to our service"
         width="500"
         elevation="2"
       >
         <template v-slot:body>
-          <MyInput label="Login" />
-          <MyInput label="Password" />
+          <my-input label="Login" />
+          <my-input label="Password" />
         </template>
         <template v-slot:footer>
-          <MyButton label="Login" />
+          <my-button label="Login" />
         </template>
-      </MyCard>
+      </my-card>
     </my-page>
   `
 });

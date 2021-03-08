@@ -22,11 +22,11 @@ const Template = (args, { argTypes }) => ({
   template: `
   <my-card v-bind="$props">
     <template v-slot:body>
-      <MyInput label="Login" />
-      <MyInput label="Password" />
+      <my-input label="Login" />
+      <my-input label="Password" />
     </template>
     <template v-slot:footer>
-      <MyButton label="Login" />
+      <my-button label="Login" />
     </template>
   </my-card>`
 });
