@@ -7,21 +7,17 @@
       {{ subTitle }}
     </v-card-subtitle>
     <v-card-text>
-      <MyInput label="Login" />
-      <MyInput label="Password" />
+      <slot name="body" />
     </v-card-text>
     <v-card-actions>
-      <MyButton label="Login" />
+      <slot name="footer" />
     </v-card-actions>
   </v-card>
 </template>
 
 <script>
-import MyInput from "./Input";
-import MyButton from "./Button";
 export default {
   name: "my-card",
-  components: { MyInput, MyButton },
   props: {
     title: {
       type: String,

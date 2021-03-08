@@ -1,8 +1,12 @@
 import MyCard from "./Card.vue";
+import MyInput from "./Input.vue";
+import MyButton from "./Button.vue";
 
 export default {
   title: "Example/Card",
   component: MyCard,
+  MyInput,
+  MyButton,
   argTypes: {
     color: { control: "color" },
     width: {
@@ -14,8 +18,17 @@ export default {
 
 const Template = (args, { argTypes }) => ({
   props: Object.keys(argTypes),
-  components: { MyCard },
-  template: '<my-card v-bind="$props" />'
+  components: { MyCard, MyInput, MyButton },
+  template: `
+  <my-card v-bind="$props">
+    <template v-slot:body>
+      <MyInput label="Login" />
+      <MyInput label="Password" />
+    </template>
+    <template v-slot:footer>
+      <MyButton label="Login" />
+    </template>
+  </my-card>`
 });
 
 export const Default = Template.bind({});
