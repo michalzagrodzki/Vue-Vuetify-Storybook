@@ -1,7 +1,7 @@
-import MyPage from "./Page";
-import MyCard from "./Card.vue";
-import MyInput from "./Input.vue";
-import MyButton from "./Button.vue";
+import MyPage from "./../components/Page";
+import MyCard from "./../components/Card";
+import MyInput from "./../components/Input";
+import MyButton from "./../components/Button";
 import * as CardStories from "./Card.stories";
 
 export default {

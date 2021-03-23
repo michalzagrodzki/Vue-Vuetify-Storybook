@@ -1,6 +1,6 @@
 import MyCard from "./Card.vue";
-import MyInput from "./Input.vue";
-import MyButton from "./Button.vue";
+import MyInput from "./../components/Input";
+import MyButton from "./../components/Button";
 
 export default {
   title: "Example/Card",
