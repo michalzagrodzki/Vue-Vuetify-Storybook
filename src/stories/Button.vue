@@ -1,32 +1,34 @@
 <template>
-  <v-btn elevation="2" :class="classes" @click="onClick" :style="style">{{ label }}</v-btn>
+  <v-btn elevation="2" :class="classes" @click="onClick" :style="style">{{
+    label
+  }}</v-btn>
 </template>
 
 <script>
-import './button.css';
+import "./button.css";
 
 export default {
-  name: 'my-button',
+  name: "my-button",
 
   props: {
     label: {
       type: String,
-      required: true,
+      required: true
     },
     primary: {
       type: Boolean,
-      default: false,
+      default: false
     },
     size: {
       type: String,
-      default: 'medium',
-      validator: function (value) {
-        return ['small', 'medium', 'large'].indexOf(value) !== -1;
-      },
+      default: "medium",
+      validator: function(value) {
+        return ["small", "medium", "large"].indexOf(value) !== -1;
+      }
     },
     backgroundColor: {
-      type: String,
-    },
+      type: String
+    }
   },
 
   computed: {
@@ -40,15 +42,15 @@ export default {
     },
     style() {
       return {
-        backgroundColor: this.backgroundColor,
+        backgroundColor: this.backgroundColor
       };
-    },
+    }
   },
 
   methods: {
     onClick() {
-      this.$emit('onClick');
-    },
-  },
+      this.$emit("onClick");
+    }
+  }
 };
 </script>
